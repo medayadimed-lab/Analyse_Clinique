@@ -294,6 +294,8 @@ with right:
                         st.session_state.selected.add(p)
                     else:
                         st.session_state.selected.discard(p)
+with open("analyse_clinique.xlsx", "rb") as f:
+    st.download_button("Télécharger Excel", f, file_name="analyse_clinique.xlsx")
 
     st.write("")
     if st.button("Suivant ➜ Enregistrer", type="primary", use_container_width=True, disabled=(uploaded is None)):
@@ -309,3 +311,4 @@ with right:
             st.session_state.pending_name = image_base_name
             st.session_state.pending_row = existing_row
             open_update_dialog()
+
