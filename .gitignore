@@ -1,0 +1,24 @@
+# Fichiers Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers temporaires
+*.db
+*.sqlite3
+
+# Données générées
+*.xlsx
+
+# Environnements virtuels
+.env
+.venv/
+env/
+venv/
+
+# Logs
+*.log
+
+# Cache Streamlit
+.streamlit/
